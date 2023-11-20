@@ -8,8 +8,8 @@ const usersRouter = require("./app/api/users/router")
 const authRouter = require("./app/api/auth/router")
 const productsRouter = require("./app/api/products/router")
 const categoryRouter = require("./app/api/category/router")
-
 const cors = require("cors")
+
 
 const {authenticateUser} = require("./app/middleware/auth")
 
