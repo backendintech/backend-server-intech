@@ -18,7 +18,9 @@ const {authenticateUser} = require("./app/middleware/auth")
 const app = express();
 const prefix = '/api'
 
-app.use(cors())
+app.use(cors({
+    origin : "*"
+}))
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
