@@ -17,9 +17,7 @@ const {authenticateUser} = require("./app/middleware/auth")
 
 const app = express();
 
-app.use(cors({
-    origin : "*"
-}))
+app.use(cors())
 
 const prefix = '/api'
 
